@@ -14,7 +14,7 @@ def index(request):
 def get_car(request, car_name):
     if request.method == 'GET':
         try:
-            car = Car.object.get(name=car_name)
+            car = Car.objects.get(name=car_name)
             response = json.dumps(
                 [{'Car': car.name, 'Top Speed': car.top_speed}])
         except:
