@@ -79,15 +79,15 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # },
-    
+
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'xeroxzen',
         'NAME': 'cars',
         'HOST': 'localhost',
-        'PORT': '5433',
-        'PASSWORD': '2021'
-        
+        'PASSWORD': '2021',
+        'PORT': ''
+
     },
 }
 
