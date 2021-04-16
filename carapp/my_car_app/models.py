@@ -8,4 +8,4 @@ class Car(models.Model):
     top_speed = models.IntegerField()
 
     def __str__(self):
-        return "f{name}"
+        return self.name
